@@ -25,6 +25,12 @@ jobs:
       - name: Build APK
         run: ./gradlew assembleDebug --stacktrace --info 2>build-error.log || (cat build-error.log; exit 1)
 
+      - name: Upload build log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-error-log
+          path: build-error.log
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
