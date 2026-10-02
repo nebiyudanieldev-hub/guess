@@ -1,0 +1,6 @@
+{
+  "name": "GUESS!",
+  "description": "A fast, addictive quiz game where users answer visual and multiple-choice guessing questions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
